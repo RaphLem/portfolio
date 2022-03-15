@@ -1,5 +1,9 @@
 <template>
+<div id="app">
+  <h2>About me</h2>
 
+
+</div>
 </template>
 
 <script>

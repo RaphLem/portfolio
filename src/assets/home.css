@@ -1,0 +1,9 @@
+#welcome {
+  font-size: 2rem;
+  grid-column: 4 / span 3;
+}
+.home {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+/*# sourceMappingURL=home.css.map */

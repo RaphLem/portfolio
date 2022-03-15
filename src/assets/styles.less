@@ -3,4 +3,118 @@
   --secondary : #3C3F41;
   --primaryYellow : #E6A84D;
   --accent : #51585c;
+  --whiteAccent: #fcfcfc;
 }
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#app{
+  background-color: var(--primary);
+  color: var(--whiteAccent);
+}
+
+h1,h2,h3{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: lighter;
+}
+
+h1,h3{
+  color: var(--primaryYellow);
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 1rem;
+}
+
+p, a, span{
+  font-family:"Bahnschrift SemiBold",sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primaryYellow);
+}
+
+header{
+  display: grid;
+  grid-template-columns: 60% 1fr;
+
+  h1{
+    text-align: center;
+    font-size: 6rem;
+    color: var(--whiteAccent)
+  }
+  h2{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--primaryYellow);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: lighter;
+  }
+}
+
+.nav{
+  margin: auto;
+  font-size: 3rem;
+  ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    li{
+      border: var(--whiteAccent) 1px solid;
+      padding: 0.7rem;
+
+      transition: transform 500ms ease;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      &:first-child{
+        align-self: flex-start;
+      }
+      &:nth-child(2){
+        width: 310px;
+      }
+      &:last-child{
+        align-self: flex-end;
+      }
+    }
+
+  }
+}
+
+#copyright{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before{
+    animation-duration: 0.01ms!important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+

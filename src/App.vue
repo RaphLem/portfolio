@@ -1,15 +1,25 @@
 <template>
   <div id="app">
     <header>
+      <div>
+        <h1 id="name">Raphaël LEMOINE</h1>
+        <h2>Web developer<br>Front-end</h2></div>
       <nav class="nav">
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/Projects">Projects</router-link></li>
-          <li><router-link to="/About">About</router-link></li>
+          <li data-aos="fade-down-right">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li data-aos="zoom-in">
+            <router-link to="/Projects">My Projects</router-link>
+          </li>
+          <li data-aos="fade-up-left">
+            <router-link to="/About">About</router-link>
+          </li>
         </ul>
       </nav>
     </header>
     <router-view/>
+    <p id="copyright">@copyright 2022: Raphaël Lemoine</p>
   </div>
 </template>
 
@@ -20,12 +30,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/styles.css';
 </style>
