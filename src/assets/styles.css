@@ -63,9 +63,26 @@ header h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
 }
+@media (max-width: 1000px) {
+  header {
+    padding-top: 5%;
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+}
 .nav {
   margin: auto;
   font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  .nav {
+    font-size: 1.5rem;
+  }
 }
 .nav a {
   text-align: center;
@@ -75,6 +92,11 @@ header h2 {
   text-align: center;
   flex-direction: column;
   gap: 2.5rem;
+}
+@media (max-width: 1000px) {
+  .nav ul {
+    gap: 1.5rem;
+  }
 }
 .nav ul li {
   border: var(--whiteAccent) 1px solid;

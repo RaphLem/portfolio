@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>My various works</h2>
+    <h2 id="title">My various works</h2>
     <h3>In Development</h3>
     <div id="dev-projects">
       <a target="_blank" href="https://projets1.raph-lem.com/">
