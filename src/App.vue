@@ -6,14 +6,11 @@
         <h2>Web developer<br>Front-end</h2></div>
       <nav class="nav">
         <ul>
-          <li data-aos="fade-down-right">
+          <li data-aos="fade-right">
             <router-link to="/">Home</router-link>
           </li>
-          <li data-aos="zoom-in">
+          <li data-aos="fade-left">
             <router-link to="/Projects">My Projects</router-link>
-          </li>
-          <li data-aos="fade-up-left">
-            <router-link to="/About">About</router-link>
           </li>
         </ul>
       </nav>

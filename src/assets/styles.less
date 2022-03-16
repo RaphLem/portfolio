@@ -8,6 +8,7 @@
 
 body{
   margin: 0;
+  height: 100vh;
 }
 
 *{
@@ -34,8 +35,12 @@ h2 {
   margin-left: 1rem;
 }
 
-p, a, span{
+p, a, span, li{
   font-family:"Bahnschrift SemiBold",sans-serif;
+}
+
+strong{
+  color: var(--primaryYellow);
 }
 
 li{
@@ -68,14 +73,14 @@ header{
 .nav{
   margin: auto;
   font-size: 3rem;
-  ul{
+  a{
     text-align: center;
+  }
+  ul{
     display: flex;
+    text-align: center;
     flex-direction: column;
     gap: 2.5rem;
-    flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 0;
     li{
       border: var(--whiteAccent) 1px solid;
       padding: 0.7rem;
@@ -84,16 +89,6 @@ header{
 
       &:hover{
         transform: scale(1.05);
-      }
-
-      &:first-child{
-        align-self: flex-start;
-      }
-      &:nth-child(2){
-        width: 310px;
-      }
-      &:last-child{
-        align-self: flex-end;
       }
     }
 

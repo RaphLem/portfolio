@@ -7,6 +7,7 @@
 }
 body {
   margin: 0;
+  height: 100vh;
 }
 * {
   box-sizing: border-box;
@@ -32,8 +33,12 @@ h2 {
 }
 p,
 a,
-span {
+span,
+li {
   font-family: "Bahnschrift SemiBold", sans-serif;
+}
+strong {
+  color: var(--primaryYellow);
 }
 li {
   list-style: none;
@@ -62,14 +67,14 @@ header h2 {
   margin: auto;
   font-size: 3rem;
 }
-.nav ul {
+.nav a {
   text-align: center;
+}
+.nav ul {
   display: flex;
+  text-align: center;
   flex-direction: column;
   gap: 2.5rem;
-  flex-grow: 1;
-  flex-basis: 0;
-  flex-shrink: 0;
 }
 .nav ul li {
   border: var(--whiteAccent) 1px solid;
@@ -78,15 +83,6 @@ header h2 {
 }
 .nav ul li:hover {
   transform: scale(1.05);
-}
-.nav ul li:first-child {
-  align-self: flex-start;
-}
-.nav ul li:nth-child(2) {
-  width: 310px;
-}
-.nav ul li:last-child {
-  align-self: flex-end;
 }
 #copyright {
   text-align: center;
